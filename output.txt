@@ -1,0 +1,77 @@
+c455-104[knl](321)$ ibrun -np 32 ./a.out 1000 PRIMES
+TACC:  Starting up job 5588296
+TACC:  Starting parallel tasks...
+Proc 0: Assigned 32 (1 - 32)
+Proc 1: Assigned 32 (33 - 64)
+Proc 2: Assigned 32 (65 - 96)
+Proc 3: Assigned 32 (97 - 128)
+Proc 4: Assigned 32 (129 - 160)
+Proc 5: Assigned 32 (161 - 192)
+Proc 6: Assigned 32 (193 - 224)
+Proc 8: Assigned 31 (257 - 287)
+Proc 11: Assigned 31 (350 - 380)
+Proc 12: Assigned 31 (381 - 411)
+Proc 13: Assigned 31 (412 - 442)
+Proc 14: Assigned 31 (443 - 473)
+Proc 16: Assigned 31 (505 - 535)
+Proc 17: Assigned 31 (536 - 566)
+Proc 20: Assigned 31 (629 - 659)
+Proc 21: Assigned 31 (660 - 690)
+Proc 22: Assigned 31 (691 - 721)
+Proc 24: Assigned 31 (753 - 783)
+Proc 26: Assigned 31 (815 - 845)
+Proc 7: Assigned 32 (225 - 256)
+Proc 9: Assigned 31 (288 - 318)
+Proc 10: Assigned 31 (319 - 349)
+Proc 15: Assigned 31 (474 - 504)
+Proc 18: Assigned 31 (567 - 597)
+Proc 19: Assigned 31 (598 - 628)
+Proc 23: Assigned 31 (722 - 752)
+Proc 25: Assigned 31 (784 - 814)
+Proc 27: Assigned 31 (846 - 876)
+Proc 28: Assigned 31 (877 - 907)
+Proc 29: Assigned 31 (908 - 938)
+Proc 30: Assigned 31 (939 - 969)
+Proc 31: Assigned 31 (970 - 1000)
+Processor 0: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
+Processor 1: 37, 41, 43, 47, 53, 59, 61,
+Processor 2: 67, 71, 73, 79, 83, 89,
+Processor 3: 97, 101, 103, 107, 109, 113, 127,
+Processor 4: 131, 137, 139, 149, 151, 157,
+Processor 5: 163, 167, 173, 179, 181, 191,
+Processor 6: 193, 197, 199, 211, 223,
+Processor 7: 227, 229, 233, 239, 241, 251,
+Processor 8: 257, 263, 269, 271, 277, 281, 283,
+Processor 9: 293, 307, 311, 313, 317,
+Processor 10: 331, 337, 347, 349,
+Processor 11: 353, 359, 367, 373, 379,
+Processor 12: 383, 389, 397, 401, 409,
+Processor 13: 419, 421, 431, 433, 439,
+Processor 14: 443, 449, 457, 461, 463, 467,
+Processor 15: 479, 487, 491, 499, 503,
+Processor 16: 509, 521, 523,
+Processor 17: 541, 547, 557, 563,
+Processor 18: 569, 571, 577, 587, 593,
+Processor 19: 599, 601, 607, 613, 617, 619,
+Processor 20: 631, 641, 643, 647, 653, 659,
+Processor 21: 661, 673, 677, 683,
+Processor 22: 691, 701, 709, 719,
+Processor 23: 727, 733, 739, 743, 751,
+Processor 24: 757, 761, 769, 773,
+Processor 25: 787, 797, 809, 811,
+Processor 26: 821, 823, 827, 829, 839,
+Processor 27: 853, 857, 859, 863,
+Processor 28: 877, 881, 883, 887, 907,
+Processor 29: 911, 919, 929, 937,
+Processor 30: 941, 947, 953, 967,
+Processor 31: 971, 977, 983, 991, 997,
+Get Primes till 1000: 168
+Number:1000 Processors:32  Time consumed:  0.004340
+TACC:  Shutdown complete. Exiting.
+c455-104[knl](322)$ date
+Fri Apr 24 01:25:58 CDT 2020
+c455-104[knl](323)$ whoami
+axs8570
+c455-104[knl](324)$ hostname
+c455-104.stampede2.tacc.utexas.edu
+c455-104[knl](325)$
