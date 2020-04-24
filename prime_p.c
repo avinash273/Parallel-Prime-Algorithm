@@ -1,3 +1,19 @@
+/*
+Parallel Prime Sieve of Eratosthenes Algorithm
+
+Done By:
+Avinash Shanker
+ID: 1001668570
+
+Implemented on Stampede2 (Texas Advanced Computing Center)
+
+
+•	To compile: mpicc prime_p.c
+•	Run the code in 2 modes:
+    Mode1(Prime count and Time): ibrun -np 2 ./a.out 1000000
+    Mode2(Prime count, Prime numbers and Time): ibrun -np 2 ./a.out 100000 PRIMES
+*/
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,7 +59,7 @@ int main(int argc, char** argv) {
 
     if(argc >= 2)
        n = strtoul(argv[1], NULL, 0);
-    if(argc == 3 && !strcmp(argv[2],"DEBUG"))
+    if(argc == 3 && !strcmp(argv[2],"PRIMES"))
     {
        debug = 1;
     }
@@ -164,7 +180,7 @@ int main(int argc, char** argv) {
     if(!p_id)
     {
      if(debug) printf("Count of primes up to %d: %d\n", n, final_count);
-     printf("Total elapsed time: %10.6f\n", timer);
+     printf("N:%lu,P:%d,Time:%10.6f\n",n,p_count,timer);
     }
 
 
